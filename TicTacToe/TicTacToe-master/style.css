@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.container {
+  display: grid;
+  /* border: 3px solid red; */
+  margin-top: 11.5%;
+  margin-left: 43.5%;
+  grid-template-columns: repeat(3, 6vw);
+  grid-template-rows: repeat(3, 6vw);
+  font-size: 1.4em;
+}
+body {
+  background-color: #ffffff;
+  color: #0b171c;
+  font-family: "Lato", sans-serif;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1e2b30;
+}
+#won {
+  margin-left: 47.5%;
+  /* border: 1px solid black; */
+  /* border: 2px solid black; */
+}
+.box:hover {
+  /* background-color: rgb(35, 39, 39); */
+  /* transition-duration: 1s; */
+  /* border-radius: 1px; */
+  cursor: pointer;
+}
+.reset-btn {
+  border: none;
+  padding: 12px 18px;
+  width: fit-content;
+  color: aliceblue;
+  height: fit-content;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid black;
+  background-color: rgb(0, 75, 72);
+  border-radius: 5px;
+  margin-top: 1.2em;
+  margin-left: 50%;
+  cursor: pointer;
+}
+.reset-btn:hover {
+  background-color: rgb(9, 98, 95);
+  color: rgb(233, 245, 255);
+  transition-duration: 1s;
+}
+.bt {
+  border-top: 0;
+}
+.bl {
+  border-left: 0;
+}
+.bb {
+  border-bottom: 0;
+}
+.br {
+  border-right: 0;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    display: grid;
+    margin-top: 50.5%;
+    margin-left: 11.5%;
+    border: 1px solid white;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(3, 25vw);
+    font-size: 2.2em;
+  }
+
+  .reset-btn {
+    border: none;
+    padding: 12px 18px;
+    width: fit-content;
+    color: aliceblue;
+    height: fit-content;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    background-color: rgb(0, 75, 72);
+    border-radius: 5px;
+    margin-top: 1.2em;
+
+    cursor: pointer;
+  }
+
+  #won {
+    text-align: center;
+    padding-top: 10px;
+  }
+}
