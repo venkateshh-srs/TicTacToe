@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 6vw);
+  grid-template-rows: repeat(3, 6vw);
+  font-size: 1.4em;
+}
+body {
+  background-color: #ffffff;
+
+  font-family: "Lato", sans-serif;
+}
+.box {
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #1e2b30;
+  opacity: 0.8;
+}
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+#won {
+  position: absolute;
+  top: 70px;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.box:hover {
+  cursor: pointer;
+}
+.reset-btn {
+  position: absolute;
+  top: 80%;
+  border: none;
+  padding: 12px 18px;
+  width: fit-content;
+  color: aliceblue;
+  height: fit-content;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid black;
+  background-color: rgb(0, 75, 72);
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+.reset-btn:hover {
+  background-color: rgb(35, 42, 42);
+  color: rgb(233, 245, 255);
+  transition-duration: 0.5s;
+}
+
+.bt {
+  border-top: 0;
+}
+.bl {
+  border-left: 0;
+}
+.bb {
+  border-bottom: 0;
+}
+.br {
+  border-right: 0;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    display: grid;
+    border: 1px solid white;
+    grid-template-columns: repeat(3, 12vw);
+    grid-template-rows: repeat(3, 12vw);
+    font-size: 2.2em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .container {
+    display: grid;
+    border: 1px solid white;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(3, 25vw);
+    font-size: 2.2em;
+  }
+
+  .reset-btn {
+    position: absolute;
+    top: 75%;
+    /* left: 50%; */
+    border: none;
+    padding: 12px 18px;
+    width: fit-content;
+    color: aliceblue;
+    height: fit-content;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+    background-color: rgb(0, 75, 72);
+    border-radius: 5px;
+    margin-top: 1.2em;
+
+    cursor: pointer;
+  }
+
+  #won {
+    position: absolute;
+    top: 15%;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
